@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* 全体 */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 10px;
+  height: 314px; 
+}
+
+/* ページ */
+
+div.page {
+  width: 736px;
+  height: 414px;
+  overflow: hidden;
+  display: none;
+}
+
+/* スタート画面  */
+div#pageStart {
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  background-color: #a9c294;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  width: 100vw;
+  height: 100vh;
+
+}
+
+div.container
+{
+  width: 380px;
+  height: 640px;
+  margin: 15px auto 0;
+  padding: 5px;
+
+}
+
+div#top {
+  text-align: center;
+  width: 230px;
+  height: 50px;
+  background-size: 432px 264px;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: 10px auto;
+  padding: 5px;
+  background-color: #92a0ec;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+div#title {
+  text-align: center;
+  width: 360px;
+  height: 530px;
+  background-size: 432px 264px;
+  background-repeat: no-repeat;
+  position: relative;    
+  margin: 30px auto;
+  padding: 8px;
+  background-color: #c1d0d8;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+p#selectStart {
+  font-weight : bold ;
+  width: 170px;
+  height: 65px;
+
+  background-size: 432px 264px;
+  background-repeat: no-repeat;
+  position: relative;
+  text-align: center;
+  float: left;
+  
+}
+
+select#courseText {
+  font-weight : bold ;
+  font-size:large;
+  text-align: center;
+  width: 60px;
+  height: 50px;
+  background-size: 432px 264px;
+  background-repeat: no-repeat;
+  position: relative;
+  background-color: #ecdee2;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+button#start_button {
+  font-weight : bold ;
+  font-size:large;
+  width: 7em;
+  height:3em;
+  background: yellow;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+
+}
+
+p#startButton {
+  text-align: center;
+
+}
+
+div#pageStart p#startButton,
+div#pageStart p#startButton a
+{
+  width: 330px;
+  height: 65px;
+
+}
+
+p#startGuid {
+  text-align: center;
+
+}
+
+/* プレイ中画面 */
+    
+div#pagePlaying {
+  background-repeat: none;
+  background-size: 736px 414px;
+  position: relative;  
+  flex-direction: column;
+  align-items: center;
+  background-color: #a9c294;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  width: 100vw;
+  height: 100vh;
+  
+}
+
+div.gameArea {
+  width: 380px;
+  height: 640px;
+  margin: 15px auto 0;
+  padding: 5px;
+
+}
+
+p#timer {
+  text-align: center;
+  width: 150px;
+  height: 35px;
+  background-size: 432px 264px;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: 15px auto;
+  padding: 5px;
+
+}
+
+div#questionTitle {
+  text-align: center;
+  width: 350px;
+  height: 200px;
+  background-size: 432px 264px;
+  background-repeat: no-repeat;
+  position: relative;    
+  margin: 20px auto;
+  padding: 20px;  
+
+}
+
+p#answer {
+  font-weight : bold ;
+  width: 200px;
+  height: 100px;
+  background-size: 432px 264px;
+  background-repeat: no-repeat;
+  position: relative;
+  text-align: center;
+  float: left;
+
+}
+
+input#answerText {
+  text-align: center;
+  font-weight : bold ;
+  font-size:large;
+  width: 120px;
+  height: 50px;
+  background-size: 432px 264px;
+  background-repeat: no-repeat;
+  position: relative;
+  background-color: #ecdee2;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+input#sendButton {
+  font-weight : bold ;
+  font-size:large;
+  width: 7em;
+  height:3em;
+  text-align: center;
+  
+  background-color: #ecdee2;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  background: yellow;
+}
+
+div#pagePlaying p#sendAnswer {
+  width: 350px;
+  height: 100px;
+  text-align: center;
+    
+}
+
+p#playGuid {
+  text-align: center;
+
+}
+
+
+/* スタート終了  */
+div#pageEnd {
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  background-color: #a9c294;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  width: 100vw;
+  height: 100vh;
+}
+
+div#endTitle {
+  text-align: center;
+  width: 230px;
+  height: 50px;
+  background-size: 432px 264px;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: 10px auto;
+  padding: 5px;
+
+}
+
+div#endScore {
+  font-weight : bold ;
+  text-align: center;
+  width: 380px;
+  height: 100px;
+  background-size: 432px 264px;
+  background-repeat: no-repeat;
+  position: relative;    
+  margin: 30px auto;
+  padding: 20px;  
+
+}
+
+input#resultText {
+  font-weight : bold ;
+  text-align: center;
+  font-size:large;
+  width: 120px;
+  height: 50px;
+  background-size: 432px 264px;
+  background-repeat: no-repeat;
+  position: relative;
+  background-color: #ecdee2;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+div#grade {
+  text-align: center;
+  width: 380px;
+  height: 100px;
+  background-size: 432px 264px;
+  background-repeat: no-repeat;
+  position: relative;    
+  margin: 30px auto;
+  padding: 20px;  
+
+}
+
+input#gradeText {
+  text-align: center;
+  font-size:175%;
+  width: 350px;
+  height: 50px;
+  background-size: 432px 264px;
+  background-repeat: no-repeat;
+  position: relative;
+  border:none;
+  background-color:transparent;
+  font-weight : bold ;
+
+}
+
+p#backStart {
+  font-weight : bold ;
+  text-align: center;
+  width: 380px;
+  height: 100px;
+  background-size: 432px 264px;
+  background-repeat: no-repeat;
+  position: relative;    
+  margin: 30px auto;
+  padding: 20px;  
+
+}
+
+button#back_button {
+  font-weight : bold ;
+  text-align: center;
+  font-size:large;
+  width: 170px;
+  height: 65px;
+  background-size: 432px 264px;
+  background-repeat: no-repeat;
+  position: relative;
+  background: yellow;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
